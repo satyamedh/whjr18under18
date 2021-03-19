@@ -3,6 +3,7 @@ package com.satyamedh.schoolmanagementprototype
 import android.content.Intent
 import android.os.Bundle
 import android.os.StrictMode
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
@@ -19,6 +20,8 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.database.ktx.database
+import com.google.firebase.iid.FirebaseInstanceId
 import com.google.firebase.ktx.Firebase
 
 
@@ -102,8 +105,25 @@ class MasterActivity : AppCompatActivity() {
 
     fun init(){
         val policy = StrictMode.ThreadPolicy.Builder().permitAll().build()
-
+        updateToken()
         StrictMode.setThreadPolicy(policy)
+    }
+
+    fun updateToken(){
+        val refreshedToken = FirebaseInstanceId.getInstance().token
+
+
+
+        val db = Firebase.database
+        val auth = Firebase.auth
+
+
+        if (auth.currentUser == null){
+            return
+        }
+
+        val ref = db.reference.child("Users").child(auth.currentUser.uid)
+        ref.setValue(refreshedToken)
     }
 
 }

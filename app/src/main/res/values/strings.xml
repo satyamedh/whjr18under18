@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SchoolManagementPrototype</string>
+    <string name="app_name">Nemi</string>
     <string name="title_activity_master">MasterActivity</string>
     <string name="action_settings">Logout</string>
 

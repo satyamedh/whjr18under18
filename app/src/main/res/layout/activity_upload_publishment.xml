@@ -38,6 +38,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/edit_text_border"
+        android:textColor="@color/white"
         android:ems="10"
         android:hint="Description"
         android:textSize="25sp"

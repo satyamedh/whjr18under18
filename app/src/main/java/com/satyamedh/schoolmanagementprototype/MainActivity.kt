@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("SetTextI18n")
     private fun init() {
         val WelcomeText = findViewById<TextView>(R.id.LoginWelcomeText)
-        WelcomeText.text = "Welcome to " + getString(R.string.app_name) + "\nLogin please!"
+        WelcomeText.text = "School Management Application \n Login please!"
         WelcomeText.textSize = 20.0f
         auth = Firebase.auth
         val loginButton = findViewById<Button>(R.id.loginButton)
