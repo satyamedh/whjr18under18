@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SchoolManagementPrototype</string>
+    <string name="title_activity_master">MasterActivity</string>
+    <string name="action_settings">Logout</string>
+
+    <string name="menu_home">Announcements</string>
+    <string name="menu_gallery">Assignments</string>
 </resources>

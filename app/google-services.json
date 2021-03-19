@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "197203245629",
+    "project_id": "whjr-18u18-project",
+    "storage_bucket": "whjr-18u18-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:197203245629:android:3d1c05000af462713ec854",
+        "android_client_info": {
+          "package_name": "com.satyamedh.schoolmanagementprototype"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "197203245629-nn1kfchmjo9tkus6uvg1p92sles5sp2i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXqvnRdgJPQ9XCRhef81cB6wPK3Yod320"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "197203245629-nn1kfchmjo9tkus6uvg1p92sles5sp2i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
